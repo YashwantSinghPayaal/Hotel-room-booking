@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.login-btn {
+  color: white;
+  text-decoration: none;
+  background-color: #ff6347;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: greenyellow;
+}
+
+.slider-section {
+  padding: 20px;
+}
+
+.slider-section h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.slider-wrapper {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1200px); }
+}
